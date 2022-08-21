@@ -2,11 +2,12 @@ package com.launcher;
 
 public class TC_001 extends BaseTest {
 	
-	public static void main(String args [])
-	{
-		launch("chrome");
+	public static void main(String args []) throws Exception
+	{ 
+		init();
+	launch("chromebrowser");
 		
-		navigate("https://www.amazon.in");
+	navigate("amazonurl");
 	}
 
 }
