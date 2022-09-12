@@ -7,7 +7,12 @@ public class TC_002 extends BaseTest {
 		
 		launch("firefoxbrowser");
 		
-		navigate("bestbuyurl");
+	//	navigate("bestbuyurl");
+		
+	//	navigate("iciciurl");
+		
+		navigate("certificateurl");
+		
 	}
 
 }
