@@ -5,13 +5,19 @@ public class TC_002 extends BaseTest {
 	{
 		init();
 		
-		launch("firefoxbrowser");
+	//	launch("firefoxbrowser");
 		
 	//	navigate("bestbuyurl");
 		
 	//	navigate("iciciurl");
 		
-		navigate("certificateurl");
+	//	navigate("certificateurl");
+		
+		launch("chromebrowser");
+		
+		navigate("iciciurl");
+		
+		
 		
 	}
 
