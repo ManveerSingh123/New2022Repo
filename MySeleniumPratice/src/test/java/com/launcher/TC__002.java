@@ -6,9 +6,9 @@ public class TC__002  extends BaseTest
 	public static void main(String[] args) throws Exception {
 
 		init();
-     launch("firefoxbrowser");
+     launch("chromebrowser");
      
-     navigate("bestbuturl");
+     navigate("fburl");
 
 	}
 

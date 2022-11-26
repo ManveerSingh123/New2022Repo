@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -50,7 +51,12 @@ String e= mainProp.getProperty("env");
 		if(p.getProperty(browser).equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			ChromeOptions option=new ChromeOptions();
+			option.addArguments("user-data-dir=C:\\Users\\manveer.kumar\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 2");
+			option.addArguments("--disable-notification");
+			option.addArguments("--start-maximized");
+			driver=new ChromeDriver(option);
+					
 			
 		}else if(p.getProperty(browser).equals("firefox"))
 		{
