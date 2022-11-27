@@ -8,7 +8,7 @@ public class TC__002  extends BaseTest
 		init();
      launch("chromebrowser");
      
-     navigate("fburl");
+     navigateUrl("fburl");
 
 	}
 

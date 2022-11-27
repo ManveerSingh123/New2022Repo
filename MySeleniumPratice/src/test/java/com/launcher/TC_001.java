@@ -8,7 +8,7 @@ public class TC_001 extends BaseTest
 		
 		 launch("chromebrowser");
 		
-		navigate("amazonurl");
+		 navigateUrl("amazonurl");
 	}
 
 }
