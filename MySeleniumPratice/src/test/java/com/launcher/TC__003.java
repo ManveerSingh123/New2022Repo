@@ -13,10 +13,18 @@ public class TC__003 extends BaseTest {
 		
 		navigateUrl("amazonurl");
 		
-		selectOption("searchDropdownBox","Books");
+		//Static
+//		selectOption("searchDropdownBox","Books");
 	//	typeText("field-keywords","Harry Potter");
-		typeText("twotabsearchtextbox","Harry Potter");
-		clickElement("//*[@id=\"nav-search-submit-button\"]");
+//		typeText("twotabsearchtextbox","Harry Potter");
+//		clickElement("//*[@id=\"nav-search-submit-button\"]");
+		
+		//Dynamic
+		
+		selectOption("amazonsearchboc_id","Books");
+	//	typeText("amazonsearchtextbox_id","Harry Potter");
+		typeText("amazonsearchtextbox_id","Harry Potter");
+		clickElement("amazonsearchbutton_xpath");
 				driver.close();
 
 		
